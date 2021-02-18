@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2019-2020 LG Electronics, Inc.
+ * Copyright (c) 2019-2021 LG Electronics, Inc.
  *
  * This software contains code licensed as described in LICENSE.
  *
@@ -15,16 +15,13 @@ using Simulator.Bridge;
 using Simulator.Bridge.Data;
 using Simulator.Utilities;
 using Simulator.Sensors.UI;
-using System.Collections;
-using Simulator.Analysis;
 
 namespace Simulator.Sensors
 {
     [SensorType("Clock", new[] { typeof(ClockData) })]
     public partial class ClockSensor : SensorBase
     {
-        Queue<Tuple<double, float, Action>> MessageQueue =
-            new Queue<Tuple<double, float, Action>>();
+        Queue<Tuple<double, float, Action>> MessageQueue = new Queue<Tuple<double, float, Action>>();
 
         BridgeInstance Bridge;
         Publisher<ClockData> Publish;
