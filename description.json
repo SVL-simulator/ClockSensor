@@ -1,7 +1,7 @@
 {
   "name": "Clock Sensor",
   "accessType": "public",
-  "description": "Example of the sensor to gather Clock Data.",
+  "description": "This sensor outputs simulated time to ROS as rosgraph_msgs/Clock message, or to CyberRT as clock message. The only parameter to use is topic/channel name.\nSee {{DOCS_HOST}}/docs/python-api/#clock for more details.",
   "licenseName": "LG Content",
   "copyright": "LG Electronics Inc.",
   "tags": [
